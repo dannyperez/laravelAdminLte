@@ -4,7 +4,7 @@
             <div class="modal-header" style="background-color: #337ab7">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span></button>
-                <h4 class="menu-title modal-title" style="color: white;">创建菜单</h4>
+                <h4 class="menu-title modal-title" style="color: white;">Crear menú</h4>
             </div>
             <form class="create_menu menu-form form-horizontal" action="/menu" method="post">
                 <div class="modal-body">
@@ -14,10 +14,10 @@
                     <input type="hidden" class="parentid" name="pid" value="{{$fields['pid']}}">
                     <div class="box-body">
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">父级菜单</label>
+                            <label class="col-sm-2 control-label">Menú padre</label>
                             <div class="col-sm-10">
                                 <select id="fname" name="pid" class="form-control select2 edit_select2" style="width: 100%;height: 34px;">
-                                    <option value="0" >顶级菜单</option>
+                                    <option value="0" >Menu principal</option>
                                     @foreach($pmenus as $pmenu)
                                         <option value="{{$pmenu->id}}">{{$pmenu->name}}</option>
                                     @endforeach
@@ -25,39 +25,39 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">菜单名称</label>
+                            <label for="" class="col-sm-2 control-label">Nombre del menú</label>
                             <div class="col-sm-10">
                                 <input id="name" type="text" name="name" class="form-control" placeholder="名称"
                                        value="{{$fields['name']}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">图标</label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">icono</label>
                             <div class="col-sm-10">
-                                <small> <a target="_blank" href="/icons">点击查看图标库</a></small>
+                                <small> <a target="_blank" href="/icons">Figura Haga clic para ver la biblioteca de iconos</a></small>
                                 <input id="icon" type="text" name="icon" class="form-control" placeholder="图标"
                                        value="{{$fields['icon']}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">链接</label>
+                            <label for="" class="col-sm-2 control-label">enlace</label>
                             <div class="col-sm-10">
                                 <input id="url" type="text" name="url" class="form-control" placeholder="链接"
                                        value="{{$fields['url']}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 text-right" >状态</label>
+                            <label for="" class="col-sm-2 text-right" >estado</label>
                             <div class="col-sm-10" id="status">
-                                开启:<input type="radio" name="status" class="minimal" value="1" checked>
-                                关闭:<input type="radio" name="status" class="minimal" value="0">
+                                Encender:<input type="radio" name="status" class="minimal" value="1" checked>
+                                apagar:<input type="radio" name="status" class="minimal" value="0">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">选择角色</label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">Elige rol</label>
                             <div class="col-sm-10">
                                 <select id="select2" name="role[]" multiple="multiple" class="form-control"
-                                        data-placeholder="选择角色" style="width: 100%;height: 34px;">
+                                        data-placeholder="Elige rol" style="width: 100%;height: 34px;">
                                     @foreach($roles as $role)
                                         <option value="{{$role->id}}">{{$role->name}}</option>
                                     @endforeach
@@ -72,8 +72,8 @@
 
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-info pull-left" data-dismiss="modal" style="background-color: #337ab7">关闭</button>
-                    <button type="submit" class="btn btn-info btn-primary" style="background-color: #337ab7">保存</button>
+                    <button type="button" class="btn btn-info pull-left" data-dismiss="modal" style="background-color: #337ab7">apagar</button>
+                    <button type="submit" class="btn btn-info btn-primary" style="background-color: #337ab7">Salvar</button>
                 </div>
             </form>
 

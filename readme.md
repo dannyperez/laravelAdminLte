@@ -1,51 +1,46 @@
+## About laravel-adminlte
 
-## 关于laravel-adminlte
+laravel-adminlte is a background template built by the lightweight front-end framework adminLte and laravel framework. It is not as large and complex as the laravel-admin background. I also like adminlte's style design, and it feels much better than layuiAdmin.
+-[laravel](https://laravel.com).
+-[adminLte](https://adminlte.io/).
 
-laravel-adminlte 通过轻量级前端框架adminLte和laravel框架搭建的后台模版，它没有laravel-admin后台那么庞大复杂。个人也比较喜欢adminlte的样式设计，感觉要比layuiAdmin好看很多。
-- [laravel](https://laravel.com).
-- [adminLte](https://adminlte.io/).
+## Main function introduction
+#### 1.laravel comes with auth login function;
+#### 2. Use iframe architecture;
+#### 3. Realize the RBAC permission function of administrators, roles, menus, and permissions;
+#### 4. Supporting menu management, administrator management, role management, authority management;
+#### 5. The jquery plugins such as icheck, datepicker, select2, datatable, etc. are called and compiled through Mix.
 
+## Project access
+#### Address: [adminlte.onlineze.com](http://adminlte.onlineze.com).
+#### Username: youke
+#### Password: youke
 
-
-
-## 主要功能介绍
-#### 1.laravel自带auth登录功能;
-#### 2.使用iframe架构;
-#### 3.实现管理员,角色,菜单,权限的RBAC权限功能;
-#### 4.配套菜单管理,管理员管理,角色管理,权限管理;
-#### 5.调用了icheck,datepicker,select2,datatable等jquery插件,并通过Mix统一编译.
-
-## 项目访问
-#### 地址：[adminlte.onlineze.com](http://adminlte.onlineze.com).
-#### 用户名：youke
-#### 密码： youke
-
-## 项目截图
+## Project screenshot
 
 ![image](https://jingze.oss-cn-beijing.aliyuncs.com/jzblog/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191210172504.png)
 ![image](https://jingze.oss-cn-beijing.aliyuncs.com/jzblog/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191210173354.png)
 
-## 安装
+## Installation
 
-#### 1.克隆下代码后,composer安装
+#### 1. After cloning the code, composer is installed
 ```
 composer install
 ```
-#### 2.创建key,并创建.env进行相关配置
+#### 2. Create key and create .env for related configuration
 
 ```
 php artisan key:generate
 ```
-#### 3.数据库迁移
+#### 3. Database migration
 
 ```
 php artisan migrate
 ```
 
-#### 4.添加必要数据
+#### 4. Add necessary data
 
 ```
 php artisan db:seeder
 ```
-> admin为超级用户,拥有所有菜单和权限.
-
+> admin is a super user with all menus and permissions.

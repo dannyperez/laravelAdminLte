@@ -57,9 +57,9 @@ class RoleController extends Controller
         $res = $role->save();
         if ($res) {
             $role->permission()->attach($data['permission_id']);
-            return back()->with('success', '添加角色成功');
+            return back()->with('success', 'Rol agregado exitosamente');
         } else {
-            return back()->withErrors(['添加角色失败']);
+            return back()->withErrors(['No se pudo agregar el rol']);
         }
     }
 
@@ -101,9 +101,9 @@ class RoleController extends Controller
         $role->save();
         $data = $role->permission()->sync($request->permission_id);
         if($data){
-            return back()->with('success','修改角色成功');
+            return back()->with('success','Rol modificado con éxito');
         }else{
-            return back()->withErrors(['修改角色失败']);
+            return back()->withErrors(['No se pudo modificar el rol']);
         }
     }
 
@@ -120,9 +120,9 @@ class RoleController extends Controller
         $role->delete();
         $res = $role->permission()->detach();
         if($res){
-            return back()->with('success','删除角色成功');
+            return back()->with('success','Rol eliminado correctamente');
         }else{
-            return back()->withErrors(['删除角色失败']);
+            return back()->withErrors(['No se pudo borrar el rol']);
         }
     }
 }

@@ -15,12 +15,12 @@ class CreateMenusTable extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->comment('菜单名称');
-            $table->string('icon')->comment('菜单标识');
-            $table->integer('pid')->default(0)->comment('父级菜单id');
-            $table->integer('level')->comment('菜单等级');
-            $table->string('url')->default('#')->comment('菜单路由地址');
-            $table->integer('status')->default(1)->comment('菜单状态，0关闭，1开启');
+            $table->string('name')->comment('Nombre del menú');
+            $table->string('icon')->comment('Icono de menú');
+            $table->integer('pid')->default(0)->comment('ID del menú principal');
+            $table->integer('level')->comment('Nivel de menú');
+            $table->string('url')->default('#')->comment('Dirección de ruta del menú');
+            $table->integer('status')->default(1)->comment('Estado del menú, 0 está apagado, 1 está encendido');
             $table->timestamps();
             $table->softDeletes();
         });

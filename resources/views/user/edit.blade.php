@@ -4,7 +4,7 @@
             <div class="modal-header" style="background-color: #337ab7">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span></button>
-                <h4 class="menu-title modal-title" style="color: white;">修改用户</h4>
+                <h4 class="menu-title modal-title" style="color: white;">Modificar usuario</h4>
             </div>
             <form id="edit-form" class="menu-form form-horizontal" action="" method="post">
                 <input type="hidden" name="_method" value="PUT">
@@ -21,9 +21,9 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">选择角色</label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">Elige rol</label>
                             <div class="col-sm-10">
-                                <select id="edit_role" name="role[]" multiple="multiple" class="form-control" data-placeholder="选择权限" style="width: 100%;height: 34px;">
+                                <select id="edit_role" name="role[]" multiple="multiple" class="form-control" data-placeholder="Elige permisos" style="width: 100%;height: 34px;">
                                     @foreach($roles as $role)
                                         <option value="{{$role->id}}">{{$role->name}}</option>
                                     @endforeach
@@ -34,8 +34,8 @@
                     <!-- /.box-body -->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-info pull-left" data-dismiss="modal" style="background-color: #337ab7">关闭</button>
-                    <button type="submit" class="btn btn-info btn-primary" style="background-color: #337ab7">保存</button>
+                    <button type="button" class="btn btn-info pull-left" data-dismiss="modal" style="background-color: #337ab7">apagar</button>
+                    <button type="submit" class="btn btn-info btn-primary" style="background-color: #337ab7">Salvar</button>
                 </div>
             </form>
 

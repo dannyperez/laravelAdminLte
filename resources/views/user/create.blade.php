@@ -4,7 +4,7 @@
             <div class="modal-header" style="background-color: #337ab7">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span></button>
-                <h4 class="menu-title modal-title" style="color: white;">新建管理员</h4>
+                <h4 class="menu-title modal-title" style="color: white;">Nuevo administrador</h4>
             </div>
             <form class="menu-form form-horizontal" action="/adminuser" method="post">
                 <div class="modal-body">
@@ -13,31 +13,31 @@
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="box-body">
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">用户名</label>
+                            <label class="col-sm-2 control-label">nombre de usuario</label>
                             <div class="col-sm-10">
-                                <input type="text" name="name" class="form-control" placeholder="用户名"
+                                <input type="text" name="name" class="form-control" placeholder="nombre de usuario"
                                        value="{{$fields['name']}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">邮箱</label>
+                            <label for="" class="col-sm-2 control-label">buzón</label>
                             <div class="col-sm-10">
-                                <input  type="text" name="email" class="form-control" placeholder="邮箱"
+                                <input  type="text" name="email" class="form-control" placeholder="buzón"
                                         value="{{$fields['email']}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">密码</label>
+                            <label for="" class="col-sm-2 control-label">contraseña</label>
                             <div class="col-sm-10">
-                                <input id="password"  type="text" name="password" class="form-control" placeholder="密码"
+                                <input id="password"  type="text" name="password" class="form-control" placeholder="contraseña"
                                         value="{{$fields['password']}}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">选择角色</label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">Elige rol</label>
                             <div class="col-sm-10">
                                 <select id="select2" name="role[]" multiple="multiple" class="form-control"
-                                        data-placeholder="选择角色" style="width: 100%">
+                                        data-placeholder="Elige rol" style="width: 100%">
                                     @foreach($roles as $role)
                                         <option value="{{$role->id}}">{{$role->name}}</option>
                                     @endforeach
@@ -49,8 +49,8 @@
                     <!-- /.box-body -->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-info pull-left" data-dismiss="modal" style="background-color: #337ab7">关闭</button>
-                    <button type="submit" class="btn btn-info btn-primary" style="background-color: #337ab7">保存</button>
+                    <button type="button" class="btn btn-info pull-left" data-dismiss="modal" style="background-color: #337ab7">apagar</button>
+                    <button type="submit" class="btn btn-info btn-primary" style="background-color: #337ab7">Salvar</button>
                 </div>
             </form>
 

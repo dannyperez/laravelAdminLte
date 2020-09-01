@@ -5,13 +5,13 @@
 @section('content')
     <section class="content-header">
         <h1>
-            管理员列表
+            Lista de administradores
             {{--            <small>advanced tables</small>--}}
         </h1>
         <ol class="breadcrumb">
-            <li><i class="fa fa-dashboard"></i> 系统</li>
-            <li>管理员管理</li>
-            <li>管理员</li>
+            <li><i class="fa fa-dashboard"></i> sistema</li>
+            <li>Gestión de administrador</li>
+            <li>administrador</li>
         </ol>
     </section>
 
@@ -28,14 +28,14 @@
                                             <button id="addRole" class="dataTables_filter btn btn-primary"
                                                     data-toggle="modal"
                                                     data-target="#modal-create" type="button"><i
-                                                    class="fa fa-fw fa-plus"></i>添加管理员
+                                                    class="fa fa-fw fa-plus"></i>Agregar administrador
                                             </button>
 
                                         </div>
                                     </div>
                                     <div class="col-sm-6 text-right">
                                         <div id="example1_filter" class="dataTables_filter">
-                                            <label>ID/用户名:
+                                            <label>ID/nombre de usuario:
                                                 <input type="search" class="form-control input-sm" placeholder=""
                                                        name="keyword" value="{{$keyword}}" aria-controls="example1">
                                             </label>
@@ -62,31 +62,31 @@
                                                 colspan="1"
                                                 aria-label="Browser: activate to sort column ascending"
                                                 style="width: 203.667px;">
-                                                用户名
+                                                nombre de usuario
                                             </th>
                                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1"
                                                 colspan="1"
                                                 aria-label="Browser: activate to sort column ascending"
                                                 style="width: 203.667px;">
-                                                邮箱
+                                                buzón
                                             </th>
                                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1"
                                                 colspan="1"
                                                 aria-label="Browser: activate to sort column ascending"
                                                 style="width: 203.667px;">
-                                                角色
+                                                Personaje
                                             </th>
                                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1"
                                                 colspan="1"
                                                 aria-label="Platform(s): activate to sort column ascending"
                                                 style="width: 179.667px;">
-                                                创建时间
+                                                Tiempo de creación
                                             </th>
                                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1"
                                                 colspan="1"
                                                 aria-label="CSS grade: activate to sort column ascending"
                                                 style="width: 99.3333px;">
-                                                操作
+                                                operando
                                             </th>
                                         </tr>
                                         </thead>
@@ -109,11 +109,11 @@
                                                            data-toggle="modal" data-id="{{$value['id']}}"
                                                            data-target="#modal-edit" data-name="{{$value['name']}}"
                                                            data-email="{{$value['email']}}"
-                                                        >编辑</a>
+                                                        >editar</a>
                                                         <a type="button" data-name="{{$value['name']}}"
                                                            class="del float-right btn btn-xs btn-danger"
                                                            data-toggle="modal" data-target="#modal-del" data-id="{{$value['id']}}">
-                                                            删除</a>
+                                                           Eliminar</a>
                                                     </div>
                                                 </td>
                                             </tr>

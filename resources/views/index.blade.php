@@ -22,7 +22,7 @@
                 <div class="inner">
                     <h4>{{$viewsCount}}</h4>
 
-                    <p>今日访问量</p>
+                    <p>Visitas de hoy</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-bag"></i>

@@ -7,13 +7,13 @@ use Illuminate\Support\Facades\Mail;
 class MailController extends Controller
 {
     public function send() {
-        $name = 'dfsdfd';
-            // Mail::send()的返回值为空，所以可以其他方法进行判断
+        $name = 'developermail';
+            // Mail::send()El valor de retorno de está vacío, puede probar con otros métodos.
         Mail::send('emails.test',['name'=>$name],function($message){
-            $to = '877440533@qq.com';
-            $message ->to($to)->subject('邮件测试');
+            $to = 'perezdann@gmail.com';
+            $message ->to($to)->subject('Prueba de correo');
         });
-            // 返回的一个错误数组，利用此可以判断是否发送成功
+            // Se devuelve una matriz de error, utilícela para determinar si la transmisión es exitosa
         dd(Mail::failures());
     }
 }

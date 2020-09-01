@@ -88,7 +88,7 @@
                                     </li>
                                 </ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
                         </li>
-                        <li class="footer"><a href="#">查看所有消息</a></li>
+                        <li class="footer"><a href="#">Ver todos los mensajes</a></li>
                     </ul>
                 </li>
                 <!-- Notifications: style can be found in dropdown.less -->
@@ -147,7 +147,7 @@
                                     <li><!-- Task item -->
                                         <a href="#">
                                             <h3>
-                                                设计按钮
+                                                Botón de diseño
                                                 <small class="pull-right">20%</small>
                                             </h3>
                                             <div class="progress xs">
@@ -203,7 +203,7 @@
                                 </ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
                         </li>
                         <li class="footer">
-                            查看所有任务
+                            Ver todas las tareas
                         </li>
                     </ul>
                 </li>
@@ -211,7 +211,7 @@
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         {{--                            <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">--}}
-                        <span class="hidden-xs">你好,{{Auth::user()->name}}</span>
+                        <span class="hidden-xs">Hola a todos,{{Auth::user()->name}}</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
@@ -226,12 +226,12 @@
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="/modifyPassword" target="mainiframe" class="btn btn-default btn-flat">修改密码</a>
+                                <a href="/modifyPassword" target="mainiframe" class="btn btn-default btn-flat">Cambia la contraseña</a>
                             </div>
                             <div class="pull-right">
                                 <form action="{{route('logout')}}" method="post">
                                     <input type="hidden" name="_token" value="{{csrf_token()}}">
-                                    <button class="btn btn-default btn-flat">退出</button>
+                                    <button class="btn btn-default btn-flat">abandonar</button>
                                 </form>
                             </div>
                         </li>

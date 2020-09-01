@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{csrf_token()}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{config('admin.title')}} | 登录</title>
+    <title>{{config('admin.title')}} | iniciar sesión</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
@@ -39,15 +39,15 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">iniciar sesión</button>
                 </div>
                 <!-- /.col -->
             </div>
         </form>
         <!-- /.social-auth-links -->
         <div style="margin-top: 1em;">
-            <a href="#">忘记密码</a>
-            <a href="register.html" style="float: right">注册</a>
+            <a href="#">contraseña olvidada</a>
+            <a href="register.html" style="float: right">registro</a>
         </div>
 
 

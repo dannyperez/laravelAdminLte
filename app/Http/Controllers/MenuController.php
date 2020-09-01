@@ -58,14 +58,14 @@ class MenuController extends Controller
         foreach ($this->fields as $field => $default) {
             $menu->{$field} = $request->{$field} ?? $default;
         }
-        //如果父级id不为0，说明是二级分类
+        // Si la identificación principal no es 0, es una clasificación secundaria
         $menu->level = $request->pid == 0 ? 1 : 2;
         $res = $menu->save();
         if ($res) {
             $menu->role()->attach($request->role);
-            return back()->with('success', '创建菜单成功');
+            return back()->with('success', 'Menú creado con éxito');
         } else {
-            return back()->withErrors(['创建菜单失败']);
+            return back()->withErrors(['No se pudo crear el menú']);
         }
     }
 
@@ -110,9 +110,9 @@ class MenuController extends Controller
         $res = $menu->save();
         if ($res) {
             $menu->role()->sync($request->role);
-            return back()->with('success', '修改菜单成功');
+            return back()->with('success', 'Menú modificado con éxito');
         } else {
-            return back()->withErrors(['修改菜单失败']);
+            return back()->withErrors(['No se pudo modificar el menú']);
         }
     }
 
@@ -126,14 +126,14 @@ class MenuController extends Controller
     {
         $menu = Menu::find($id);
         if ($menu->children->toArray()) {
-            return back()->withErrors(['该菜单有子菜单，删除失败']);
+            return back()->withErrors(['Este menú tiene submenús, no se pudo borrar']);
         }
         $res = $menu->delete();
         if ($res) {
             $menu->role()->detach();
-            return back()->with('success', '删除菜单成功');
+            return back()->with('success', 'Menú eliminado con éxito');
         } else {
-            return back()->withErrors(['删除菜单失败']);
+            return back()->withErrors(['No se pudo borrar el menú']);
         }
     }
 }

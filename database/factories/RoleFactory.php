@@ -4,7 +4,7 @@ use Faker\Generator as Faker;
 
 $factory->define(\App\Model\Role::class, function (Faker $faker) {
     return [
-        'name'=>'超级管理员',
+        'name'=>'Super admin',
         'description' => $faker->word,
     ];
 });

@@ -56,9 +56,9 @@ class AdminUserController extends Controller
         $res = $user->save();
         $user->role()->attach($request->role);
         if($res){
-            return back()->with('success','创建管理员成功');
+            return back()->with('success','Administrador creado con éxito');
         }else{
-            return back()->withErrors(['创建管理员失败']);
+            return back()->withErrors(['Error al crear administrador']);
         }
     }
 
@@ -103,9 +103,9 @@ class AdminUserController extends Controller
         $user->save();
         $res = $user->role()->sync($request->role);
         if($res){
-            return back()->with('success','修改用户成功');
+            return back()->with('success','Usuario modificado con éxito');
         }else{
-            return back()->withErrors(['修改用户信息成功']);
+            return back()->withErrors(['Información del usuario modificada correctamente ']);
         }
     }
 
@@ -122,9 +122,9 @@ class AdminUserController extends Controller
         $res =  $user->delete();
         if($res){
             $user->role()->detach();
-            return back()->with('success','删除用户成功');
+            return back()->with('success','Usuario eliminado correctamente');
         }else{
-            return back()->withErrors(['删除用户失败']);
+            return back()->withErrors(['No se pudo eliminar al usuario']);
         }
     }
 }

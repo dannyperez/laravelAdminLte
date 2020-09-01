@@ -64,9 +64,9 @@ class PermissionController extends Controller
         }
         $res = $permission->save();
         if($res){
-            return back()->with('success','添加权限成功');
+            return back()->with('success','Permiso agregado con éxito');
         }else{
-            return back()->withErrors(['添加权限失败']);
+            return back()->withErrors(['No se pudo agregar permiso']);
         }
     }
 
@@ -112,9 +112,9 @@ class PermissionController extends Controller
         }
         $res = $permission->save();
         if($res){
-            return back()->with('success','修改权限成功');
+            return back()->with('success','Permisos modificados con éxito');
         }else{
-            return back()->withErrors(['修改权限失败']);
+            return back()->withErrors(['No se pudieron modificar los permisos']);
         }
     }
 
@@ -128,9 +128,9 @@ class PermissionController extends Controller
     {
         $res = Permission::destroy($id);
         if($res){
-            return back()->with('success','删除权限成功');
+            return back()->with('success','Permisos eliminados con éxito');
         }else{
-            return back()->withErrors(['删除权限失败']);
+            return back()->withErrors(['No se pudieron eliminar los permisos']);
         }
     }
 }

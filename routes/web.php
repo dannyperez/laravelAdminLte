@@ -28,7 +28,7 @@ Route::get('403', 'HomeController@noPermission');
 
 Route::get('mail/send','MailController@send');
 
-//图标库
+//Biblioteca de iconos
 Route::get('icons', function () {
     return view('icons');
 });

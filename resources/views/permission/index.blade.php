@@ -2,11 +2,11 @@
 @section('content')
     <section class="content-header">
         <h1>
-            权限管理
+            gestión de autoridad
         </h1>
         <ol class="breadcrumb">
-            <li><i class="fa fa-dashboard"></i> 系统设置</li>
-            <li>权限管理</li>
+            <li><i class="fa fa-dashboard"></i> Ajustes del sistema</li>
+            <li>gestión de autoridad</li>
         </ol>
     </section>
 
@@ -22,7 +22,7 @@
                                         <button class="dataTables_filter btn btn-primary"
                                                 data-toggle="modal"
                                                 data-target="#modal-create" type="button"><i
-                                                class="fa fa-fw fa-plus"></i>添加权限
+                                                class="fa fa-fw fa-plus"></i>Agregar permisos
                                         </button>
                                     </div>
                                 </div>
@@ -46,32 +46,32 @@
                                                 colspan="1"
                                                 aria-label="Browser: activate to sort column ascending"
                                                 style="width: 203.667px;">
-                                                权限名
+                                                Nombre del permiso
                                             </th>
 
                                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1"
                                                 colspan="1"
                                                 aria-label="Platform(s): activate to sort column ascending"
                                                 style="width:379.667px;">
-                                                路由
+                                                enrutamiento
                                             </th>
                                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1"
                                                 colspan="1"
                                                 aria-label="CSS grade: activate to sort column ascending"
                                                 style="width: 99.3333px;">
-                                                创建时间
+                                                Tiempo de creación
                                             </th>
                                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1"
                                                 colspan="1"
                                                 aria-label="CSS grade: activate to sort column ascending"
                                                 style="width: 99.3333px;">
-                                                更新时间
+                                                Tiempo de actualizacion
                                             </th>
                                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1"
                                                 colspan="1"
                                                 aria-label="CSS grade: activate to sort column ascending"
                                                 style="width: 99.3333px;">
-                                                操作
+                                                operando
                                             </th>
                                         </tr>
                                         </thead>
@@ -91,11 +91,11 @@
                                                 <td style="vertical-align: middle">
                                                     <div class="text-center">
                                                         <a type="button" data-toggle="modal" data-target="#modal-update"
-                                                           data-id="{{$value->id}}" class="edit btn btn-xs btn-warning">编辑</a>
+                                                           data-id="{{$value->id}}" class="edit btn btn-xs btn-warning">editar</a>
                                                         <a type="button" class="del float-right btn btn-xs btn-danger"
                                                            data-toggle="modal" data-target="#modal-del"
                                                            data-name="{{$value->name}}" data-id="{{$value->id}}">
-                                                            删除</a>
+                                                           Eliminar</a>
                                                     </div>
                                                 </td>
                                             </tr>

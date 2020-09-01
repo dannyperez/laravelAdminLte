@@ -13,13 +13,13 @@
 @section('content')
     <section class="content-header">
         <h1>
-            菜单管理
+            Gestión de menú
             {{--            <small>advanced tables</small>--}}
         </h1>
         <ol class="breadcrumb">
-            <li><i class="fa fa-dashboard"></i> 系统</li>
-            <li>系统设置</li>
-            <li>菜单管理</li>
+            <li><i class="fa fa-dashboard"></i> sistema</li>
+            <li>Ajustes del sistema</li>
+            <li>Gestión de menú</li>
         </ol>
     </section>
 
@@ -35,19 +35,19 @@
                             <div class="col-sm-6">
                                 <div>
                                     <button id="addMenu" class="dataTables_filter btn btn-primary" data-toggle="modal"
-                                            data-target="#modal-create" type="button"><i class="fa fa-fw fa-plus"></i>添加菜单</button>
+                                            data-target="#modal-create" type="button"><i class="fa fa-fw fa-plus"></i>Agregar menú</button>
                                 </div>
                             </div>
                         </div>
                         <table id="menu" class="table table-bordered table-striped" style="margin-top:1em;">
                             <thead>
                             <tr>
-                                <th>菜单名称</th>
-                                <th>链接</th>
-                                <th>图标</th>
-                                <th>所属角色</th>
-                                <th>状态</th>
-                                <th>操作</th>
+                                <th>Nombre del menú</th>
+                                <th>enlace</th>
+                                <th>icono</th>
+                                <th>Rol de propiedad</th>
+                                <th>estado</th>
+                                <th>Activo</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -68,11 +68,11 @@
                                                data-icon="{{$menu->icon}}" data-status="{{$menu->status}}"
                                                data-pid="{{$menu->pid}}" data-id="{{$menu->id}}"
                                                class="edit btn btn-xs btn-warning">
-                                                编辑</a>
+                                               editar</a>
                                             <a type="button" data-name="{{$menu->name}}" data-id="{{$menu->id}}"
                                                class="del float-right btn btn-xs btn-danger"
                                                data-toggle="modal" >
-                                                删除</a>
+                                               Eliminar</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -93,10 +93,10 @@
                                                         <a type="button" data-name="{{$cmenu->name}}" data-url="{{$cmenu->url}}"
                                                            data-icon="{{$cmenu->icon}}" data-status="{{$cmenu->status}}"
                                                            data-pid="{{$cmenu->pid}}" data-id="{{$cmenu->id}}"
-                                                           class="edit btn btn-xs btn-warning">编辑</a>
+                                                           class="edit btn btn-xs btn-warning">editar</a>
                                                         <a type="button"  class="del float-right btn btn-xs btn-danger"
                                                            data-toggle="modal" data-name="{{$cmenu->name}}" data-id="{{$cmenu->id}}">
-                                                            删除</a>
+                                                           Eliminar</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -151,11 +151,11 @@
                 $("#edit-select").val(role).select2();
             });
             $('#addMenu').click(function(){
-                $(".menu-title").text('创建菜单');
+                $(".menu-title").text('Crear menú');
                 $("#modal-create").show();
             });
             $('.addChildMenu').click(function(e){
-                $(".menu-title").text('添加子分类');
+                $(".menu-title").text('Agregar subcategoría');
                 $("#modal-create").show();
                 $(".parentid").attr('value',$(e.target).data('id'));
             });

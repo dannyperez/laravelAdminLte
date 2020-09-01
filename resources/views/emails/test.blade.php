@@ -1,2 +1,2 @@
-{{$name}}你好，这是一封测试文件。
+{{$name}}Hola a todos，Este es un archivo de prueba.
 

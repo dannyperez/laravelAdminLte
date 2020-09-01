@@ -12,11 +12,11 @@ class MenuTableSeeder extends Seeder
     public function run()
     {
         DB::table('menus')->insert([
-            ['name' => '系统管理', 'icon' => 'fa-gear', 'pid' => 0, 'level' => 1, 'url' => '#'],
-            ['name' => '管理员管理', 'icon' => 'fa-user', 'pid' => 1, 'level' => 2, 'url' => '/adminuser'],
-            ['name' => '角色管理', 'icon' => 'fa-group', 'pid' => 1, 'level' => 2, 'url' => '/role'],
-            ['name' => '权限管理', 'icon' => 'fa-gear', 'pid' => 1, 'level' => 2, 'url' => '/permission'],
-            ['name' => '菜单管理', 'icon' => 'fa-cog', 'pid' => 1, 'level' => 2, 'url' => '/menu']
+            ['name' => 'Gestión del sistema', 'icon' => 'fa-gear', 'pid' => 0, 'level' => 1, 'url' => '#'],
+            ['name' => 'Gestión de administrador', 'icon' => 'fa-user', 'pid' => 1, 'level' => 2, 'url' => '/adminuser'],
+            ['name' => 'Gestión de roles', 'icon' => 'fa-group', 'pid' => 1, 'level' => 2, 'url' => '/role'],
+            ['name' => 'gestión de autoridad', 'icon' => 'fa-gear', 'pid' => 1, 'level' => 2, 'url' => '/permission'],
+            ['name' => 'Gestión de menú', 'icon' => 'fa-cog', 'pid' => 1, 'level' => 2, 'url' => '/menu']
         ]);
         DB::table('menu_role')->insert([
             ['menu_id'=>1,'role_id'=>1],

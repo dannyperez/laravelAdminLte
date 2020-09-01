@@ -40,7 +40,7 @@
         var ua = navigator.userAgent.toLowerCase();
 
         var screenwidth = window.screen.width;
-        // console.log("屏幕宽度为", screenwidth);
+        // console.log("El ancho de la pantalla es", screenwidth);
         if (!/iphone|ipad|ipod/.test(ua)) {
         } else {
             document.getElementById("mainiframe").width = screenwidth;

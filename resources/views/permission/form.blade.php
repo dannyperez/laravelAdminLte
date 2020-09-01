@@ -4,7 +4,7 @@
     <input type="hidden" name="_token" value="{{csrf_token()}}">
     <div class="box-body">
         <div class="form-group">
-            <label class="col-sm-2 control-label">权限名称</label>
+            <label class="col-sm-2 control-label">Nombre de la autoridad</label>
             <div class="col-sm-10">
                 <div class="row">
                     <input type="text" name="name" class="permission_name form-control" placeholder="名称"
@@ -13,12 +13,12 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">选择权限</label>
+            <label for="inputPassword3" class="col-sm-2 control-label">Elige permisos</label>
             <div class="col-sm-10">
                 <div class="row">
                     <div class="col-sm-5">
                         <div class="form-group">
-                            <label>所有权限</label>
+                            <label>Todos los permisos</label>
                             <select multiple class="form-control selectL" style="min-height: 300px;font-size: 12px;padding:0">
                                 @foreach($routes as $route)
                                 <option>{{$route->routeRule}}</option>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-sm-5">
                         <div class="form-group">
-                            <label>已选权限</label>
+                            <label>Permisos seleccionados</label>
                             <select multiple name="routes[]" class="form-control selectR" style="min-height: 300px;font-size: 12px;padding:0">
 
                             </select>

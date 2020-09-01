@@ -34,8 +34,8 @@ class AdminUserCreateRequest extends FormRequest
     public function messages()
     {
         return [
-            'email:unique' => '该邮箱已经被注册',
-            'name:unique' => '该用户名已经被注册',
+            'email:unique' => 'El correo ya existe',
+            'name:unique' => 'El nombre ya existe',
         ];
     }
 }

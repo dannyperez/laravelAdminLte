@@ -33,9 +33,9 @@ class MenuCreateRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => '菜单名称不能为空',
-            'pid.required' => '请选择父级菜单',
-            'role.required' => '请选择所属角色'
+            'name.required' => 'El nombre del menú no puede estar vacío',
+            'pid.required' => 'Seleccione el menú principal',
+            'role.required' => 'Seleccione el rol'
         ];
     }
 }
