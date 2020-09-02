@@ -44,3 +44,5 @@ php artisan migrate
 php artisan db:seeder
 ```
 > admin is a super user with all menus and permissions.
+
+// test
